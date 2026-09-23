@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhiram Financial Solutions | Instant Loan Approvals in Pune</title>
+    <meta name="description" content="Get instant personal, business, and home loans in Pune. Fast approval, lowest interest rates starting at 10.49%. Apply now with Abhiram Financial Solutions.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            navyLight: '#1E293B',
+                        },
+                        accent: {
+                            DEFAULT: '#059669', // emerald-600
+                            hover: '#047857',   // emerald-700
+                            light: '#ECFDF5',   // emerald-50
+                        },
+                        gold: {
+                            DEFAULT: '#D97706', // amber-600
+                            light: '#FEF3C7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Range Sliders & hiding scrollbars -->
+    <style>
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #059669;
+            cursor: pointer;
+            margin-top: -8px;
+            box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.1);
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 6px;
+            cursor: pointer;
+            background: #E2E8F0;
+            border-radius: 3px;
+        }
+        .radio-pill input:checked + label {
+            background-color: #ECFDF5;
+            border-color: #059669;
+            color: #059669;
+            font-weight: 600;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            .safe-bottom {
+                padding-bottom: calc(env(safe-area-inset-bottom) + 0.5rem);
+            }
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Abhiram Financial Solutions",
+      "image": "https://abhiramfinance.com/assets/image.png",
+      "@id": "https://abhiramfinance.com",
+      "url": "https://abhiramfinance.com",
+      "telephone": "+919022488094",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No:T9-A1-A-1207, Floor No:12, BramhaCorp Business Park, Block Sector:Vadgaonsheri",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411014",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "18:30"
+      },
+      "sameAs": []
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Sticky Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer group" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                    <img src="assets/image.png" alt="Abhiram Financial Solutions" class="h-12 sm:h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="#products" class="text-[15px] font-semibold text-slate-600 hover:text-brand-navy transition-colors">Products</a>
+                    <a href="#calculator" class="text-[15px] font-semibold text-slate-600 hover:text-brand-navy transition-colors">EMI Calculator</a>
+                    <a href="#eligibility" class="text-[15px] font-semibold text-slate-600 hover:text-brand-navy transition-colors">Eligibility</a>
+                    <a href="#faqs" class="text-[15px] font-semibold text-slate-600 hover:text-brand-navy transition-colors">FAQs</a>
+                </div>
+
+                <!-- CTAs -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="tel:+919022488094" class="text-brand-navy font-bold text-[15px] flex items-center hover:text-accent transition-colors group">
+                        <i data-lucide="phone" class="w-4 h-4 mr-1.5 group-hover:rotate-12 transition-transform"></i> 90224 88094
+                    </a>
+                    <button onclick="document.getElementById('loan-form').scrollIntoView({behavior: 'smooth', block: 'center'})" class="bg-accent hover:bg-accent-hover text-white px-6 py-2.5 rounded-xl text-[15px] font-bold transition-all duration-300 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 flex items-center transform hover:-translate-y-0.5">
+                        <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Apply on WhatsApp
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-navy focus:outline-none p-2 rounded-lg hover:bg-slate-100 transition-colors">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-2 shadow-2xl absolute w-full origin-top transform transition-all duration-300">
+            <a href="#products" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 transition-colors">Products</a>
+            <a href="#calculator" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 transition-colors">EMI Calculator</a>
+            <a href="#eligibility" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 transition-colors">Eligibility</a>
+            <a href="#faqs" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 transition-colors">FAQs</a>
+            <div class="pt-4 mt-2 border-t border-slate-100 px-4">
+               <a href="tel:+919022488094" class="flex items-center justify-center w-full bg-slate-50 text-brand-navy font-bold py-3 rounded-xl mb-3 border border-slate-200">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2"></i> Call 90224 88094
+                </a>
+                <button onclick="document.getElementById('loan-form').scrollIntoView({behavior: 'smooth', block: 'center'}); document.getElementById('mobile-menu').classList.add('hidden');" class="flex items-center justify-center w-full bg-accent text-white font-bold py-3 rounded-xl shadow-lg shadow-emerald-500/20">
+                    <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Apply on WhatsApp
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-brand-navy relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0 40V0H40" fill="none" stroke="currentColor" stroke-width="1"/></pattern></defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left: Value Prop -->
+                <div class="text-white">
+                    <div class="inline-flex items-center bg-white/10 rounded-full px-3 py-1 text-sm font-medium text-accent-light mb-6 border border-white/20">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-400 mr-1 fill-current"></i> 4.8/5 Rating from 10,000+ Customers
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                        Instant Loan Approvals From <span class="text-accent-light">₹50,000</span> to <span class="text-accent-light">₹50 Lakhs</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 max-w-lg">
+                        Get the funds you need with zero hassle. We partner with India's top Banks and NBFCs to secure the best rates for you.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-accent/20 rounded-full p-1.5 mt-0.5">
+                                <i data-lucide="check" class="w-4 h-4 text-accent-light"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-[17px] font-semibold">24-48 Hour Disbursal</h3>
+                                <p class="text-[15px] text-slate-400 mt-0.5">Fastest turnaround time in the industry.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-accent/20 rounded-full p-1.5 mt-0.5">
+                                <i data-lucide="check" class="w-4 h-4 text-accent-light"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-[17px] font-semibold">Minimal KYC Processing</h3>
+                                <p class="text-[15px] text-slate-400 mt-0.5">100% digital process, no physical visits required.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-accent/20 rounded-full p-1.5 mt-0.5">
+                                <i data-lucide="check" class="w-4 h-4 text-accent-light"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-[17px] font-semibold">Rates Starting @ 10.49%* p.a.</h3>
+                                <p class="text-[15px] text-slate-400 mt-0.5">Competitive rates tailored to your credit profile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Application Form Card -->
+                <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 relative" id="apply-section">
+                    
+                    <!-- Form Container -->
+                    <div id="form-container">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-bold text-brand-navy">Check Your Eligibility</h2>
+                            <p class="text-[15px] text-slate-500 mt-1">Takes less than 60 seconds</p>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="flex items-center justify-between mb-10 relative px-4">
+                            <div class="absolute left-6 right-6 top-1/2 transform -translate-y-1/2 h-1 bg-slate-100 rounded-full -z-10"></div>
+                            <div id="progress-line" class="absolute left-6 top-1/2 transform -translate-y-1/2 w-[calc(50%-1.5rem)] h-1 bg-accent rounded-full -z-10 transition-all duration-500 ease-in-out"></div>
+                            
+                            <div class="flex flex-col items-center">
+                                <div class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold text-base shadow-md shadow-emerald-500/30 ring-4 ring-white">1</div>
+                                <span class="text-[13px] font-bold mt-2 text-brand-navy">Requirement</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div id="step-2-indicator" class="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center font-bold text-base transition-all duration-500 ring-4 ring-white">2</div>
+                                <span id="step-2-text" class="text-[13px] font-semibold mt-2 text-slate-400 transition-colors duration-500">Details</span>
+                            </div>
+                        </div>
+
+                        <form id="loan-form" onsubmit="handleFormSubmit(event)">
+                            
+                            <!-- STEP 1 -->
+                            <div id="step-1" class="space-y-6">
+                                <div>
+                                    <label class="block text-[15px] font-bold text-slate-700 mb-3">Loan Type</label>
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                                        <div class="radio-pill">
+                                            <input type="radio" id="type-personal" name="loanType" value="Personal Loan" class="hidden" checked onchange="updateFormContext()">
+                                            <label for="type-personal" class="block text-center px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] font-medium text-slate-600 cursor-pointer hover:bg-slate-100 transition-all duration-200 select-none">Personal</label>
+                                        </div>
+                                        <div class="radio-pill">
+                                            <input type="radio" id="type-business" name="loanType" value="Business Loan" class="hidden" onchange="updateFormContext()">
+                                            <label for="type-business" class="block text-center px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] font-medium text-slate-600 cursor-pointer hover:bg-slate-100 transition-all duration-200 select-none">Business</label>
+                                        </div>
+                                        <div class="radio-pill">
+                                            <input type="radio" id="type-home" name="loanType" value="Home Loan" class="hidden" onchange="updateFormContext()">
+                                            <label for="type-home" class="block text-center px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] font-medium text-slate-600 cursor-pointer hover:bg-slate-100 transition-all duration-200 select-none">Home</label>
+                                        </div>
+                                        <div class="radio-pill">
+                                            <input type="radio" id="type-lap" name="loanType" value="Loan Against Property" class="hidden" onchange="updateFormContext()">
+                                            <label for="type-lap" class="block text-center px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] font-medium text-slate-600 cursor-pointer hover:bg-slate-100 transition-all duration-200 select-none">LAP</label>
+                                        </div>
+                                        <div class="radio-pill">
+                                            <input type="radio" id="type-car" name="loanType" value="Used Car Loan" class="hidden" onchange="updateFormContext()">
+                                            <label for="type-car" class="block text-center px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] font-medium text-slate-600 cursor-pointer hover:bg-slate-100 transition-all duration-200 select-none">Used Car</label>
+                                        </div>
+                                        <div class="radio-pill">
+                                            <input type="radio" id="type-bt" name="loanType" value="Balance Transfer" class="hidden" onchange="updateFormContext()">
+                                            <label for="type-bt" class="block text-center px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] font-medium text-slate-600 cursor-pointer hover:bg-slate-100 transition-all duration-200 select-none">Top-Up/BT</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-[15px] font-bold text-slate-700 mb-2">Desired Loan Amount (₹)</label>
+                                    <input type="number" id="loanAmount" required min="50000" max="50000000" placeholder="e.g. 500000" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-4 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 font-bold text-lg bg-slate-50 focus:bg-white placeholder-slate-400">
+                                    <div class="flex gap-2.5 mt-3 overflow-x-auto no-scrollbar pb-1">
+                                        <button type="button" onclick="setAmount(100000)" class="whitespace-nowrap text-[13px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-600 px-4 py-1.5 rounded-full transition-colors">₹1 Lakh</button>
+                                        <button type="button" onclick="setAmount(300000)" class="whitespace-nowrap text-[13px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-600 px-4 py-1.5 rounded-full transition-colors">₹3 Lakhs</button>
+                                        <button type="button" onclick="setAmount(500000)" class="whitespace-nowrap text-[13px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-600 px-4 py-1.5 rounded-full transition-colors">₹5 Lakhs</button>
+                                        <button type="button" onclick="setAmount(1000000)" class="whitespace-nowrap text-[13px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-600 px-4 py-1.5 rounded-full transition-colors">₹10 Lakhs</button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-[15px] font-bold text-slate-700 mb-2" id="incomeLabel">Net Monthly Income (₹)</label>
+                                    <input type="number" id="monthlyIncome" required min="10000" placeholder="e.g. 45000" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-4 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 font-bold text-lg bg-slate-50 focus:bg-white placeholder-slate-400">
+                                </div>
+
+                                <button type="button" onclick="goToStep2()" class="w-full bg-brand-navy hover:bg-brand-navyLight text-white font-bold py-4 px-4 rounded-xl transition-all duration-300 shadow-xl shadow-brand-navy/20 mt-4 flex items-center justify-center group">
+                                    Continue <i data-lucide="arrow-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                                </button>
+                            </div>
+
+                            <!-- STEP 2 -->
+                            <div id="step-2" class="space-y-5 hidden animate-[fadeIn_0.3s_ease-in-out]">
+                                <div>
+                                    <label class="block text-[15px] font-bold text-slate-700 mb-2">Full Name (As per PAN)</label>
+                                    <input type="text" id="fullName" required minlength="3" placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-4 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 font-medium bg-slate-50 focus:bg-white placeholder-slate-400">
+                                </div>
+
+                                <div>
+                                    <label class="block text-[15px] font-bold text-slate-700 mb-2">Mobile Number</label>
+                                    <div class="relative">
+                                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-slate-500 font-bold">+91</span>
+                                        <input type="tel" id="mobileNumber" required pattern="^[6-9]\d{9}$" placeholder="9876543210" class="w-full pl-14 pr-4 py-3.5 rounded-xl border border-slate-300 focus:ring-4 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 font-bold bg-slate-50 focus:bg-white placeholder-slate-400">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-[15px] font-bold text-slate-700 mb-2">Employment</label>
+                                        <select id="employmentType" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-4 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 bg-slate-50 focus:bg-white font-medium cursor-pointer appearance-none">
+                                            <option value="Salaried">Salaried</option>
+                                            <option value="Self-Employed">Self-Employed / Business</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-[15px] font-bold text-slate-700 mb-2">Pincode</label>
+                                        <input type="text" id="pincode" required pattern="^[1-9][0-9]{5}$" placeholder="411001" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-4 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 font-medium bg-slate-50 focus:bg-white placeholder-slate-400">
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start mt-4 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                    <div class="flex items-center h-5 mt-0.5">
+                                        <input id="consent" type="checkbox" required class="w-5 h-5 text-accent bg-white border-slate-300 rounded focus:ring-accent accent-accent cursor-pointer">
+                                    </div>
+                                    <label for="consent" class="ml-3 text-[13px] text-slate-600 cursor-pointer leading-tight">
+                                        I authorize Abhiram Financial Solutions and its partners to contact me via WhatsApp, SMS, or Voice call regarding my application.
+                                    </label>
+                                </div>
+
+                                <div class="flex gap-3 pt-4">
+                                    <button type="button" onclick="goToStep1()" class="w-1/3 bg-white border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 font-bold py-4 px-4 rounded-xl transition-all duration-200">
+                                        Back
+                                    </button>
+                                    <button type="submit" id="submitBtn" class="w-2/3 bg-accent hover:bg-accent-hover text-white font-bold py-4 px-4 rounded-xl transition-all duration-300 shadow-xl shadow-emerald-500/30 flex items-center justify-center transform hover:-translate-y-0.5">
+                                        <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Submit & Connect
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Success / Processing State -->
+                    <div id="success-state" class="hidden text-center py-8">
+                        <div class="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check-circle-2" class="w-8 h-8 text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Connecting to WhatsApp...</h3>
+                        <p class="text-sm text-slate-500 mb-6">If the chat doesn't open automatically, click the button below.</p>
+                        <a id="manual-wa-link" href="#" target="_blank" class="inline-flex items-center justify-center w-full bg-accent hover:bg-accent-hover text-white font-bold py-3 px-4 rounded-lg transition shadow-md">
+                            <i data-lucide="external-link" class="w-4 h-4 mr-2"></i> Open WhatsApp Manually
+                        </a>
+                        <button onclick="resetForm()" class="mt-4 text-sm text-slate-500 hover:text-brand-navy underline">Start New Application</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 md:gap-6 text-center md:divide-x divide-slate-100">
+                <div class="px-2">
+                    <div class="text-2xl font-bold text-brand-navy mb-1">₹50+ Cr</div>
+                    <div class="text-xs text-slate-500 font-medium uppercase tracking-wide">Disbursed Successfully</div>
+                </div>
+                <div class="px-2">
+                    <div class="text-2xl font-bold text-brand-navy mb-1">24-48h</div>
+                    <div class="text-xs text-slate-500 font-medium uppercase tracking-wide">Fastest Turnaround</div>
+                </div>
+                <div class="px-2">
+                    <div class="text-2xl font-bold text-brand-navy mb-1">25+</div>
+                    <div class="text-xs text-slate-500 font-medium uppercase tracking-wide">Lending Partners</div>
+                </div>
+                <div class="px-2">
+                    <div class="text-2xl font-bold text-brand-navy mb-1 flex justify-center items-center">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-accent mr-1"></i> 256-bit
+                    </div>
+                    <div class="text-xs text-slate-500 font-medium uppercase tracking-wide">Bank-grade Security</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-navy mb-4">Tailored Loan Solutions</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Find the perfect financing option for your personal or business needs with competitive rates and flexible tenures.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="user" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Personal Loan</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to ₹15 Lakhs</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> From 10.75%* p.a.</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> 1 - 5 Years Tenure</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Unsecured</li>
+                    </ul>
+                    <button onclick="prefillForm('type-personal')" class="w-full py-2.5 border-2 border-brand-navy text-brand-navy rounded-lg font-semibold hover:bg-brand-navy hover:text-white transition">Apply Now</button>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="briefcase" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Business Loan</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to ₹50 Lakhs</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> From 13.50%* p.a.</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Working Capital</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Minimal Docs</li>
+                    </ul>
+                    <button onclick="prefillForm('type-business')" class="w-full py-2.5 border-2 border-brand-navy text-brand-navy rounded-lg font-semibold hover:bg-brand-navy hover:text-white transition">Apply Now</button>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Home Loan</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to ₹5 Crores</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> From 8.40%* p.a.</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to 30 Years</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Purchase & Constr.</li>
+                    </ul>
+                    <button onclick="prefillForm('type-home')" class="w-full py-2.5 border-2 border-brand-navy text-brand-navy rounded-lg font-semibold hover:bg-brand-navy hover:text-white transition">Apply Now</button>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="building" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Loan Against Property</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to ₹3 Crores</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> From 9.25%* p.a.</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to 15 Years</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Commercial/Resi</li>
+                    </ul>
+                    <button onclick="prefillForm('type-lap')" class="w-full py-2.5 border-2 border-brand-navy text-brand-navy rounded-lg font-semibold hover:bg-brand-navy hover:text-white transition">Apply Now</button>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center text-rose-600 mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="car" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Used Car Loan</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to 90% Valuation</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> From 11.50%* p.a.</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Up to 7 Years</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Fast Disbursal</li>
+                    </ul>
+                    <button onclick="prefillForm('type-car')" class="w-full py-2.5 border-2 border-brand-navy text-brand-navy rounded-lg font-semibold hover:bg-brand-navy hover:text-white transition">Apply Now</button>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition group bg-gradient-to-br from-white to-slate-50">
+                    <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Balance Transfer</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Save up to 3% APR</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Top-up Facility</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Lower EMI</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-accent mr-2"></i> Doorstep Docs</li>
+                    </ul>
+                    <button onclick="prefillForm('type-bt')" class="w-full py-2.5 bg-brand-navy text-white rounded-lg font-semibold hover:bg-brand-navyLight transition shadow-md">Calculate Savings</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMI Calculator Section -->
+    <section id="calculator" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
+                
+                <!-- Inputs -->
+                <div class="p-8 lg:w-3/5 border-b lg:border-b-0 lg:border-r border-slate-200 bg-slate-50/50">
+                    
+                    <!-- Amount Slider -->
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <label class="font-semibold text-brand-navy">Loan Amount</label>
+                            <span class="font-bold text-accent text-lg" id="calc-amount-display">₹ 5,00,000</span>
+                        </div>
+                        <input type="range" id="calc-amount" min="50000" max="5000000" step="50000" value="500000" oninput="updateCalculator()">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>₹50K</span>
+                            <span>₹50L</span>
+                        </div>
+                    </div>
+
+                    <!-- Interest Slider -->
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <label class="font-semibold text-brand-navy">Interest Rate (p.a.)</label>
+                            <span class="font-bold text-accent text-lg" id="calc-rate-display">12.5%</span>
+                        </div>
+                        <input type="range" id="calc-rate" min="8.5" max="24" step="0.5" value="12.5" oninput="updateCalculator()">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>8.5%</span>
+                            <span>24%</span>
+                        </div>
+                    </div>
+
+                    <!-- Tenure Slider -->
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <label class="font-semibold text-brand-navy">Tenure (Years)</label>
+                            <span class="font-bold text-accent text-lg" id="calc-tenure-display">3 Years</span>
+                        </div>
+                        <input type="range" id="calc-tenure" min="1" max="7" step="1" value="3" oninput="updateCalculator()">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>1 Yr</span>
+                            <span>7 Yrs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="p-8 lg:w-2/5 bg-brand-navy text-white flex flex-col justify-center">
+                    <div class="text-center mb-8">
+                        <p class="text-slate-400 text-sm mb-2 uppercase tracking-wider font-semibold">Monthly EMI</p>
+                        <div class="text-5xl font-bold text-accent-light" id="res-emi">₹ 16,736</div>
+                    </div>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex justify-between border-b border-slate-700 pb-2">
+                            <span class="text-slate-400">Principal Amount</span>
+                            <span class="font-semibold" id="res-principal">₹ 5,00,000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-700 pb-2">
+                            <span class="text-slate-400">Total Interest</span>
+                            <span class="font-semibold" id="res-interest">₹ 1,02,482</span>
+                        </div>
+                        <div class="flex justify-between pb-2">
+                            <span class="text-slate-400">Total Amount Payable</span>
+                            <span class="font-semibold" id="res-total">₹ 6,02,482</span>
+                        </div>
+                    </div>
+
+                    <button onclick="applyFromCalc()" class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-3 px-4 rounded-lg transition shadow-lg text-center flex justify-center items-center">
+                        Apply for <span id="btn-amount-display" class="mx-1">₹ 5,00,000</span> <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </button>
+                    <p class="text-[10px] text-slate-500 text-center mt-3 text-balance">*Actual figures may vary based on bank policies and final credit assessment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Process -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-navy mb-4">How It Works</h2>
+                <p class="text-slate-600">A seamless, digital-first borrowing experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-slate-200 z-0"></div>
+
+                <div class="text-center relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-50 rounded-full flex items-center justify-center shadow-lg mb-6 text-brand-navy">
+                        <i data-lucide="file-text" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Submit Requirement</h3>
+                    <p class="text-slate-600 text-sm">Fill the 60-second form or chat on WhatsApp to share your loan needs.</p>
+                </div>
+
+                <div class="text-center relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-50 rounded-full flex items-center justify-center shadow-lg mb-6 text-blue-600">
+                        <i data-lucide="shield-check" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Digital Verification</h3>
+                    <p class="text-slate-600 text-sm">We find the best lender. Complete digital KYC and upload basic documents securely.</p>
+                </div>
+
+                <div class="text-center relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-50 rounded-full flex items-center justify-center shadow-lg mb-6 text-accent">
+                        <i data-lucide="indian-rupee" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Sanction & Disbursal</h3>
+                    <p class="text-slate-600 text-sm">Get final approval and funds transferred directly to your bank account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility & Documents -->
+    <section id="eligibility" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-brand-navy mb-4">Eligibility & Documents</h2>
+                <p class="text-slate-600">Basic criteria to ensure a smooth approval process.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex border-b border-slate-200 mb-8">
+                <button onclick="switchTab('salaried')" id="tab-salaried" class="flex-1 py-4 text-center font-bold text-accent border-b-2 border-accent transition">
+                    Salaried Employee
+                </button>
+                <button onclick="switchTab('self-employed')" id="tab-self-employed" class="flex-1 py-4 text-center font-semibold text-slate-500 border-b-2 border-transparent hover:text-slate-700 transition">
+                    Self-Employed / Business
+                </button>
+            </div>
+
+            <!-- Tab Content: Salaried -->
+            <div id="content-salaried" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-navy flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-accent"></i> Eligibility Criteria</h4>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Age: 21 to 58 years</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Min. Net Income: ₹20,000/month</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Work Experience: Min. 6 months</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> CIBIL Score: 650+ preferred</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-navy flex items-center"><i data-lucide="folder-open" class="w-5 h-5 mr-2 text-blue-500"></i> Required Documents</h4>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> KYC: PAN Card & Aadhaar Card</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Income: Last 3 months Salary Slips</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Bank: Last 6 months salary a/c statement</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Employment: Company ID / Form 16</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab Content: Self Employed -->
+            <div id="content-self-employed" class="grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-navy flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-accent"></i> Eligibility Criteria</h4>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Age: 23 to 65 years</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Min. Turnover: ₹15 Lakhs/year</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Business Vintage: Min. 2-3 years</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> CIBIL Score: 680+ preferred</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-navy flex items-center"><i data-lucide="folder-open" class="w-5 h-5 mr-2 text-blue-500"></i> Required Documents</h4>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> KYC: PAN, Aadhaar of applicant</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Business Proof: GST / Udyam / Shop Act</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Financials: Last 2 yrs ITR with computation</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0"></span> Bank: Last 12 months Current A/C statement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-brand-navy mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-brand-navy flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Does inquiring impact my CIBIL score?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-600 text-sm hidden border-t border-slate-100 pt-3">
+                        No. Checking your eligibility through Abhiram Financial Solutions involves a "soft pull" or informal assessment based on your inputs. A formal "hard inquiry" which impacts your score is only done when you officially authorize a specific bank to process your application.
+                    </div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-brand-navy flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Are there any upfront fees?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-600 text-sm hidden border-t border-slate-100 pt-3">
+                        Abhiram Financial Solutions does not charge any upfront consulting fees from customers. Lenders may charge a standard processing fee (usually 1-3% of loan amount), which is deducted directly from the final disbursed amount. Be wary of anyone asking for cash upfront for loan approvals.
+                    </div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-brand-navy flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        How long does disbursal take?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-600 text-sm hidden border-t border-slate-100 pt-3">
+                        For Personal and Business loans with complete digital KYC, disbursal typically happens within 24 to 48 hours. Secure loans like Home Loans or LAP require property valuation and legal checks, taking usually 7 to 14 working days.
+                    </div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold text-brand-navy flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Can I apply if my salary is received in cash?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-600 text-sm hidden border-t border-slate-100 pt-3">
+                        Most major banks require salary to be credited directly to a bank account. However, we have specific NBFC partners who may consider cash salary profiles if accompanied by a strong CIBIL score and consistent provident fund (PF) deductions. Please apply and discuss with our expert.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-slate-300 py-12 border-t-4 border-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-4">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/image.png" alt="Abhiram Financial Solutions" class="h-16 sm:h-20 w-auto object-contain bg-white rounded-lg p-2">
+                    </div>
+                    <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                        Your trusted Direct Selling Agent (DSA) and loan facilitator in Pune. Connecting you with India's premier financial institutions for seamless borrowing.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="md:col-span-2">
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#products" class="hover:text-accent-light transition">Loan Products</a></li>
+                        <li><a href="#calculator" class="hover:text-accent-light transition">EMI Calculator</a></li>
+                        <li><a href="#eligibility" class="hover:text-accent-light transition">Eligibility</a></li>
+                        <li><a href="#faqs" class="hover:text-accent-light transition">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="md:col-span-3">
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i data-lucide="phone" class="w-4 h-4 mt-0.5 mr-2 shrink-0"></i>
+                            <a href="tel:+919022488094" class="hover:text-white transition">+91 90224 88094</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="mail" class="w-4 h-4 mt-0.5 mr-2 shrink-0"></i>
+                            <a href="mailto:contact@abhiramfinance.com" class="hover:text-white transition">contact@abhiramfinance.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-0.5 mr-2 shrink-0"></i>
+                            <span class="leading-tight">Office No:T9-A1-A-1207, Floor No:12,<br>BramhaCorp Business Park, Vadgaonsheri,<br>Pune - 411014, Maharashtra.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Disclaimers -->
+            <div class="border-t border-slate-700 pt-8 text-[11px] text-slate-500 text-justify">
+                <p class="mb-2"><strong class="text-slate-400">Disclaimer:</strong> Abhiram Financial Solutions is a loan facilitator and Direct Selling Agent (DSA). We are not a direct lender, Bank, or NBFC. All loan approvals, interest rates, processing fees, and tenures are at the sole discretion of the partner financial institutions based on their internal credit policies and the applicant's creditworthiness. Submitting an application does not guarantee loan approval.</p>
+                <div class="flex flex-col md:flex-row justify-between items-center mt-4">
+                    <p>&copy; 2026 Abhiram Financial Solutions. All rights reserved.</p>
+                    <div class="space-x-4 mt-2 md:mt-0">
+                        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-4px_10px_-1px_rgba(0,0,0,0.1)] z-50 sm:hidden flex safe-bottom">
+        <a href="tel:+919022488094" class="flex-1 py-3.5 text-center font-bold text-brand-navy border-r border-slate-200 flex items-center justify-center bg-slate-50 active:bg-slate-100 transition-colors">
+            <i data-lucide="phone-call" class="w-5 h-5 mr-2"></i> Call Now
+        </a>
+        <button onclick="document.getElementById('loan-form').scrollIntoView({behavior: 'smooth'})" class="flex-1 py-3.5 text-center font-bold text-white bg-accent flex items-center justify-center active:bg-accent-hover transition-colors">
+            <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Apply on WA
+        </button>
+    </div>
+
+    <!-- Padding for mobile to ensure content isn't hidden behind sticky bar -->
+    <div class="h-20 sm:hidden block"></div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // --- Mobile Menu Logic ---
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+
+        // --- Form Logic ---
+        function updateFormContext() {
+            const selectedType = document.querySelector('input[name="loanType"]:checked').value;
+            const incomeLabel = document.getElementById('incomeLabel');
+            const empTypeSelect = document.getElementById('employmentType');
+
+            if (selectedType === 'Business Loan' || selectedType === 'Loan Against Property') {
+                incomeLabel.innerText = "Yearly Turnover (₹)";
+                empTypeSelect.value = "Self-Employed";
+            } else {
+                incomeLabel.innerText = "Net Monthly Income (₹)";
+            }
+        }
+
+        function setAmount(val) {
+            document.getElementById('loanAmount').value = val;
+        }
+
+        function goToStep2() {
+            const amt = document.getElementById('loanAmount');
+            const inc = document.getElementById('monthlyIncome');
+
+            if(!amt.checkValidity() || !inc.checkValidity()) {
+                amt.reportValidity();
+                inc.reportValidity();
+                return;
+            }
+
+            document.getElementById('step-1').classList.add('hidden');
+            document.getElementById('step-2').classList.remove('hidden');
+            
+            document.getElementById('progress-line').classList.replace('w-[calc(50%-1.5rem)]', 'w-[calc(100%-3rem)]');
+            document.getElementById('step-2-indicator').classList.replace('bg-slate-100', 'bg-accent');
+            document.getElementById('step-2-indicator').classList.replace('text-slate-400', 'text-white');
+            document.getElementById('step-2-indicator').classList.replace('ring-white', 'shadow-md');
+            document.getElementById('step-2-indicator').classList.add('shadow-emerald-500/30', 'ring-4', 'ring-white');
+            
+            document.getElementById('step-2-text').classList.replace('text-slate-400', 'text-brand-navy');
+            document.getElementById('step-2-text').classList.add('font-bold');
+            document.getElementById('step-2-text').classList.remove('font-semibold');
+        }
+
+        function goToStep1() {
+            document.getElementById('step-2').classList.add('hidden');
+            document.getElementById('step-1').classList.remove('hidden');
+            
+            document.getElementById('progress-line').classList.replace('w-[calc(100%-3rem)]', 'w-[calc(50%-1.5rem)]');
+            document.getElementById('step-2-indicator').classList.replace('bg-accent', 'bg-slate-100');
+            document.getElementById('step-2-indicator').classList.replace('text-white', 'text-slate-400');
+            document.getElementById('step-2-indicator').classList.remove('shadow-md', 'shadow-emerald-500/30');
+            
+            document.getElementById('step-2-text').classList.replace('text-brand-navy', 'text-slate-400');
+            document.getElementById('step-2-text').classList.remove('font-bold');
+            document.getElementById('step-2-text').classList.add('font-semibold');
+        }
+
+        function prefillForm(radioId) {
+            document.getElementById(radioId).checked = true;
+            updateFormContext();
+            document.getElementById('apply-section').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const loanType = document.querySelector('input[name="loanType"]:checked').value;
+            const amount = document.getElementById('loanAmount').value;
+            const income = document.getElementById('monthlyIncome').value;
+            const name = document.getElementById('fullName').value;
+            const mobile = document.getElementById('mobileNumber').value;
+            const empType = document.getElementById('employmentType').value;
+            const pin = document.getElementById('pincode').value;
+
+            const formatter = new Intl.NumberFormat('en-IN');
+            const formattedAmount = formatter.format(amount);
+            const formattedIncome = formatter.format(income);
+
+            const message = `*New Loan Inquiry — Abhiram Financial Solutions*
+────────────────────────────
+• *Name:* ${name}
+• *Mobile:* ${mobile}
+• *Loan Type:* ${loanType}
+• *Required Amount:* ₹${formattedAmount}
+• *Income/Turnover:* ₹${formattedIncome}
+• *Employment:* ${empType}
+• *Pincode:* ${pin}
+────────────────────────────
+_Submitted via abhiramfinance.com_`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const targetPhone = "919022488094";
+            const waUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
+
+            document.getElementById('form-container').classList.add('hidden');
+            document.getElementById('success-state').classList.remove('hidden');
+            document.getElementById('manual-wa-link').href = waUrl;
+
+            setTimeout(() => {
+                window.open(waUrl, '_blank');
+            }, 800);
+        }
+
+        function resetForm() {
+            document.getElementById('loan-form').reset();
+            goToStep1();
+            document.getElementById('success-state').classList.add('hidden');
+            document.getElementById('form-container').classList.remove('hidden');
+        }
+
+        // --- EMI Calculator Logic ---
+        const formatIN = new Intl.NumberFormat('en-IN');
+
+        function updateCalculator() {
+            const p = parseFloat(document.getElementById('calc-amount').value);
+            const r = parseFloat(document.getElementById('calc-rate').value);
+            const t = parseFloat(document.getElementById('calc-tenure').value);
+
+            document.getElementById('calc-amount-display').innerText = '₹ ' + formatIN.format(p);
+            document.getElementById('calc-rate-display').innerText = r + '%';
+            document.getElementById('calc-tenure-display').innerText = t + (t > 1 ? ' Years' : ' Year');
+            document.getElementById('btn-amount-display').innerText = '₹ ' + formatIN.format(p);
+
+            const rMon = r / 12 / 100;
+            const nMon = t * 12;
+            
+            let emi = 0;
+            let totalPayable = 0;
+            let totalInterest = 0;
+
+            if (r > 0) {
+                emi = (p * rMon * Math.pow(1 + rMon, nMon)) / (Math.pow(1 + rMon, nMon) - 1);
+                totalPayable = emi * nMon;
+                totalInterest = totalPayable - p;
+            } else {
+                emi = p / nMon;
+                totalPayable = p;
+            }
+
+            document.getElementById('res-emi').innerText = '₹ ' + formatIN.format(Math.round(emi));
+            document.getElementById('res-principal').innerText = '₹ ' + formatIN.format(p);
+            document.getElementById('res-interest').innerText = '₹ ' + formatIN.format(Math.round(totalInterest));
+            document.getElementById('res-total').innerText = '₹ ' + formatIN.format(Math.round(totalPayable));
+        }
+
+        function applyFromCalc() {
+            const amount = document.getElementById('calc-amount').value;
+            setAmount(amount);
+            document.getElementById('type-personal').checked = true;
+            updateFormContext();
+            document.getElementById('apply-section').scrollIntoView({behavior: 'smooth'});
+        }
+
+        updateCalculator();
+
+        // --- UI Interactions ---
+        function switchTab(tabId) {
+            document.getElementById('content-salaried').classList.add('hidden');
+            document.getElementById('content-self-employed').classList.add('hidden');
+            
+            document.getElementById('tab-salaried').className = "flex-1 py-4 text-center font-semibold text-slate-500 border-b-2 border-transparent hover:text-slate-700 transition";
+            document.getElementById('tab-self-employed').className = "flex-1 py-4 text-center font-semibold text-slate-500 border-b-2 border-transparent hover:text-slate-700 transition";
+            
+            document.getElementById('content-' + tabId).classList.remove('hidden');
+            document.getElementById('tab-' + tabId).className = "flex-1 py-4 text-center font-bold text-accent border-b-2 border-accent transition";
+        }
+
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('svg') || btn.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                if (icon) icon.style.transform = 'rotate(180deg)';
+                btn.classList.add('text-accent');
+            } else {
+                content.classList.add('hidden');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+                btn.classList.remove('text-accent');
+            }
+        }
+    </script>
+</body>
+</html>
