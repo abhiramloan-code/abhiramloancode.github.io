@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://abhiramfinance.com/sitemap.xml
+Sitemap: https://abhiramloancode.github.io/sitemap.xml
